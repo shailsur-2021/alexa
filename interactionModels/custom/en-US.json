@@ -1,0 +1,245 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "i need food",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "I pass",
+            "forget it",
+            "never mind"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hello",
+            "how are you",
+            "hi"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "MealIntent",
+          "slots": [
+            {
+              "name": "maxcalories",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "I prefer {maxcalories} calories per day",
+                "I need {maxcalories} calories per day",
+                "{maxcalories} per day",
+                "I like {maxcalories} calories",
+                "I would prefer {maxcalories} calories",
+                "{maxcalories}"
+              ]
+            },
+            {
+              "name": "diet",
+              "type": "diet",
+              "samples": [
+                "I need {diet}",
+                "I like {diet} diet",
+                "I would like {diet}",
+                "I like {diet}",
+                "I want {diet}",
+                "I prefer {diet}",
+                "{diet}"
+              ]
+            }
+          ],
+          "samples": [
+            "{diet} diet",
+            "{diet} diet with {maxcalories} calories per day",
+            "{diet} with {maxcalories} calories",
+            "{maxcalories} per day",
+            "{diet} with {maxcalories}",
+            "{diet} with {maxcalories} per day",
+            "{diet}  diet",
+            "Give me {maxcalories} calories per day",
+            "I\u0027d like {maxcalories} calories per day",
+            "{maxcalories} calories",
+            "Get me {diet}",
+            "Get me {diet} diet",
+            "Get me a {diet} meal plan",
+            "Get me a {diet} meal plan that gives me {maxcalories} calories per day"
+          ]
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.MoreIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateSettingsIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageUpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PreviousIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollRightIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollLeftIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollUpIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Ovo-Vegetarian"
+              }
+            },
+            {
+              "name": {
+                "value": "Lacto-Vegetarian"
+              }
+            },
+            {
+              "name": {
+                "value": "Ketogenic"
+              }
+            },
+            {
+              "name": {
+                "value": "Gluten Free"
+              }
+            },
+            {
+              "name": {
+                "value": "Vegetarian"
+              }
+            },
+            {
+              "name": {
+                "value": "Vegan"
+              }
+            },
+            {
+              "name": {
+                "value": "Paleo"
+              }
+            }
+          ],
+          "name": "diet"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "MealIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "maxcalories",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.18579850803.1606284098653"
+              },
+              "validations": [
+                {
+                  "type": "isLessThan",
+                  "prompt": "Slot.Validation.1416186669693.545253664389.1144082215043",
+                  "value": "3500"
+                }
+              ]
+            },
+            {
+              "name": "diet",
+              "type": "diet",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.18579850803.919712635653"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.18579850803.919712635653",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What diet would you prefer?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Here are some choices Gluten Free, Ketogenic,Vegetarian, Lacto-Vegetarian, Ovo-Vegetarian, Vegan, Paleo. Can you tell me the diet you\u0027d prefer?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.18579850803.1606284098653",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What is the max calories you prefer per day?"
+          },
+          {
+            "type": "PlainText",
+            "value": "What are your target calories per day?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1416186669693.545253664389.1144082215043",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please provide values less than three thousand five hundred calories"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "22"
+}
