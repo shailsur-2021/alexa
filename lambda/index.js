@@ -7,7 +7,7 @@ const rp = require("request-promise-native");
 
 async function getData(diet,maxcalories) {
   var options = {
-    uri: `https://api.spoonacular.com/mealplanner/generate?timeFrame=day&diet=${diet}&maxcalories=${maxcalories}&apiKey=412a17a2fbae477d8bd4532385fc8091`,
+    uri: `https://api.spoonacular.com/mealplanner/generate?timeFrame=day&diet=${diet}&maxcalories=${maxcalories}&apiKey=PutAPIKeyHere`,
     json: true,
   };
 
