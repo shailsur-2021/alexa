@@ -6,13 +6,6 @@ const Alexa = require("ask-sdk-core");
 const rp = require("request-promise-native");
 
 async function getData(diet,maxcalories) {
-  var options = {
-    uri: `https://api.spoonacular.com/mealplanner/generate?timeFrame=day&diet=${diet}&maxcalories=${maxcalories}&apiKey=PutYourAPIKey`,
-    json: true,
-  };
-
-  var response = await rp(options);
-  return response;
 }
 
 const LaunchRequestHandler = {
@@ -39,22 +32,7 @@ const MealIntentHandler = {
         "MealIntent"
     );
   },
-  async handle(handlerInput) {
-    const maxcalories =
-      handlerInput.requestEnvelope.request.intent.slots.maxcalories.value;
-    const diet   =
-      handlerInput.requestEnvelope.request.intent.slots.diet.value;
-    let speakOutput = "";
-    await getData(diet,maxcalories)
-      .then((response) => {
-        speakOutput = `Okay, you can have these 3 dishes for the day :1) ${response["meals"][0]["servings"]} servings of ${response["meals"][0]["title"]} :2) ${response["meals"][1]["servings"]} servings of ${response["meals"][1]["title"]} :3)  ${response["meals"][2]["servings"]} servings of ${response["meals"][2]["title"]} `;
-      })
-      .catch((err) => {
-        console.log(err);
-        speakOutput = `I could not generate a meal plan for your choices. Please try again.`;
-      });
-    return handlerInput.responseBuilder.speak(speakOutput).getResponse();
-  },
+  async handle(handlerInput) {},
 };
 
 const SessionEndedRequestHandler = {
