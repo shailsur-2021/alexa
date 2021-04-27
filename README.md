@@ -23,15 +23,25 @@ https://spoonacular.com/food-api/docs#Generate-Meal-Plan
 
 ![image](https://user-images.githubusercontent.com/9892791/116185119-f8b57180-a6ee-11eb-92a2-7c887fdeb36b.png)
 
-5) Once the code is imported successfuly, go to the Invocation section under Build menu. Update the invocation as you like. Say '_plan my meal'_. This will be the phrase to invoke your Meal Planner Skill.
+5) Once the code is imported successfuly, click on the newly imported _Meal Planner_ skill.
+
+![image](https://user-images.githubusercontent.com/9892791/116185801-56968900-a6f0-11eb-8983-f03250c99451.png)
+
+
+6) Next, click on the Invocation menu under Build menu on the left navigation. Customize the invocation to anything suitable like, '_plan my meal'_. This phrase becomes your Meal Planner Skill invocation. 
 
 ![image](https://user-images.githubusercontent.com/76848465/115782293-1e561a00-a381-11eb-91ed-e4a1cbdf135b.png)
 
-6) Next, go to the Build menu. Look into the MealIntent. Examine the _Sample utterances_.
+7) Click on Save Model to save your invocation phrase.
 
- ![image](https://user-images.githubusercontent.com/76848465/115781674-4b55fd00-a380-11eb-99ba-4fc00e8122e2.png)
+![image](https://user-images.githubusercontent.com/9892791/116187203-15ec3f00-a6f3-11eb-9a57-19a6a4c41c53.png)
 
-7) Look into the Slots _maxcalories_ and _diet_ under MealIntent. 
+
+8) Click on the Build menu. Look into the MealIntent. Examine the _Sample utterances_.
+
+![image](https://user-images.githubusercontent.com/76848465/115781674-4b55fd00-a380-11eb-99ba-4fc00e8122e2.png)
+
+8) Look into the Slots _maxcalories_ and _diet_ under MealIntent. 
 
 ![image](https://user-images.githubusercontent.com/76848465/115781780-7b050500-a380-11eb-85d4-7dc073b415f6.png)
 
