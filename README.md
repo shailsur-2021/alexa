@@ -15,7 +15,7 @@ https://spoonacular.com/food-api/docs#Generate-Meal-Plan
 
 ### Import and update Code from Github
 
-3) Go to Alexa console, under Skills, Hit _Create skill_. Enter the Skill Name as _Meal Planner_. Have _Engligh (US)_ as the default language. Choose Custom under _Choose a model to add to your skill_. Choose Alexa-hosted (Node.js) under _Choose a method to host your skill's backend resources_. Hit _Create Skill_. In the next page that opens up, choose _Start From Scratch_. Hit _Import Skill_. In the dialog that opens up, provide the URL of this git repository https://github.com/shailsur-2021/alexa.git. 
+3) Go to Alexa console, under Skills, click _Create skill_. Enter the Skill Name as _Meal Planner_. Leave _Engligh (US)_ as the default language. Choose Custom under _Choose a model to add to your skill_. Choose Alexa-hosted (Node.js) under _Choose a method to host your skill's backend resources_. Click _Create Skill_. In the next page that opens up, choose _Start From Scratch_. Click _Import Skill_. In the dialog that opens up, provide the URL of this git repository https://github.com/shailsur-2021/alexa.git. 
 
 4) Once the code is imported successfuly, go to the Invocation section under Build menu. Update the invocation as you like. Say '_plan my meal'_. This will be the phrase to invoke your Meal Planner Skill.
 
