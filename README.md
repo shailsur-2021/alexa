@@ -133,14 +133,41 @@ Let's understand what we have done so far.
 ### Step 6: Test your Meal Planning Skill. 
 It is time to test! The Meal Planner skill should now be able to do the following:
 
-    Ask the user for their birthday
-    Listen to the answer from the user and automatically follow up with questions if any required slots (month, day, year) are missing
-    Respond to the user by repeating their birthday
+/**
+* **Ask** the user for their birthday
+* **Listen** to the answer from the user and automatically follow up with questions if any required slots (month, day, year) are missing
+* **Respond** to the user by repeating their birthday
+*/
 
 Let's test the skill.
 1) Click  _Test_ tab to begin testing your skill.  
 
 ![image](https://user-images.githubusercontent.com/9892791/116345234-bd31aa80-a7b5-11eb-90be-d1d8ed738eaf.png)
 
-2) Test the skill using the invocation options you entered under _Alexa speech prompts_ and _User utterances_ for the _maxcalories_ slot.
-You can test by typing what the user would say in the box at the top left, or you can speak to the skill by clicking and holding the microphone icon and speaking.
+
+2) Make sure skill testing is enabled. Select Development in the drop down box in the top left
+
+![image](https://user-images.githubusercontent.com/9892791/116346703-c1ab9280-a7b8-11eb-9fd8-6221a505b7fe.png)
+
+3) You can test by typing what the user would say in the box at the top left of the Alexa Simulator, or you can speak to the skill by clicking and holding the microphone icon and speaking.
+
+![image](https://user-images.githubusercontent.com/9892791/116346878-16e7a400-a7b9-11eb-884f-8d9c3d0fe492.png)
+
+4) Test the skill using the invocation options you entered under _Alexa speech prompts_ and _User utterances_ for the _maxcalories_ slot.
+
+![image](https://user-images.githubusercontent.com/9892791/116347095-88bfed80-a7b9-11eb-9b5d-a1d8df461a9c.png)
+
+
+## Wrap-up
+
+At this point, your skill has become slightly more nuanced. It can ask the user for a meal plan options and respond with some  options. Congratulations!
+
+However, while your skill can ask for a user's meal plan option, your skill doesn't remember it the next time the skill is opened. It would be a better user experience if Meal Planner remembered the selected plan. You can make your skill remember things by persisting data with AWS database or storage servoces in the backend. Persistence is not covered in this lab
+
+### How do I put this skill on my echo dot?
+/**
+*Get an Echo Dot or another Amazon device if you don’t have one already!
+*Download the Amazon Alexa app on your phone 
+*Log in w/ credentials for your developer account
+*Invoke your skill!!
+
