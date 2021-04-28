@@ -131,10 +131,16 @@ async function getData(diet,maxcalories) {
 Let's understand what we have done so far.
 
 ### Step 6: Test your Meal Planning Skill. 
+It is time to test! The Meal Planner skill should now be able to do the following:
 
-1) Click on the _Test_ menu and test the skill.  
+    Ask the user for their birthday
+    Listen to the answer from the user and automatically follow up with questions if any required slots (month, day, year) are missing
+    Respond to the user by repeating their birthday
 
-[screenshot]
+Let's test the skill.
+1) Click  _Test_ tab to begin testing your skill.  
+
+![image](https://user-images.githubusercontent.com/9892791/116345234-bd31aa80-a7b5-11eb-90be-d1d8ed738eaf.png)
 
 2) Test the skill using the invocation options you entered under _Alexa speech prompts_ and _User utterances_ for the _maxcalories_ slot.
-[Screenshot
+You can test by typing what the user would say in the box at the top left, or you can speak to the skill by clicking and holding the microphone icon and speaking.
