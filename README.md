@@ -15,7 +15,7 @@ https://spoonacular.com/food-api/docs#Generate-Meal-Plan
 
 ### Step 1: Import and update Code from Github
 
-1) Go to Alexa console, under Skills, click _Create skill_. Enter the Skill Name as _Meal Planner_. Leave _Engligh (US)_ as the default language. Choose Custom under _Choose a model to add to your skill_. Choose Alexa-hosted (Node.js) under _Choose a method to host your skill's backend resources_. Click _Create Skill_. 
+1) Go to Alexa console, under Skills, click _Create skill_. Enter a Skill Name as _Meal Planner_. Leave _Engligh (US)_ as the default language. Choose Custom under _Choose a model to add to your skill_. Choose Alexa-hosted (Node.js) under _Choose a method to host your skill's backend resources_. Click _Create Skill_. 
 
 ![image](https://user-images.githubusercontent.com/9892791/116184733-5d240100-a6ee-11eb-9a8e-70f1497f0112.png)
 
@@ -28,7 +28,7 @@ https://spoonacular.com/food-api/docs#Generate-Meal-Plan
 ![image](https://user-images.githubusercontent.com/9892791/116185801-56968900-a6f0-11eb-8983-f03250c99451.png)
 
 
-4) Next, click on the Invocation menu under Build menu on the left navigation. Customize the invocation to anything suitable like, '_plan my meal'_. This phrase becomes your Meal Planner Skill invocation. 
+4) Next, click on the Invocation menu under Build menu on the left navigation. Customize the invocation to anything that resonates with you, e.g., '_plan my meal'_. This phrase becomes your Meal Planner Skill invocation. 
 
 ![image](https://user-images.githubusercontent.com/76848465/115782293-1e561a00-a381-11eb-91ed-e4a1cbdf135b.png)
 
@@ -59,7 +59,7 @@ Now let's explore the skill's front end. Remember, an intent is an action to ful
 
 ![image](https://user-images.githubusercontent.com/9892791/116191131-cc532280-a6f9-11eb-9bc0-c2e9b09515d8.png)
 
-### Step 4: Modify the Skill's Backend processing code. 
+### Step 4: Modify the Skill's Backend processing code
 In this section, we will make adjustments to the backend processing....
 
 
@@ -108,21 +108,29 @@ async function getData(diet,maxcalories) {
 ```
 
 4) Get the API key specific to your user account under Profile section of the Spoonacular dashboard. 
-[screenshot]
+
+![image](https://user-images.githubusercontent.com/9892791/116343386-5363d180-a7b2-11eb-8beb-032735115c4d.png)
+
 
 5) Replace 'PUTYOURKEYHERE' in the getData function with your API key.
-[screenshot]
 
-6) _Save_ and _Deploy_ the changes made in _index.js_. 
+![image](https://user-images.githubusercontent.com/9892791/116343988-80fd4a80-a7b3-11eb-8ab2-6d7e5806ea57.png)
 
-[screenshot]
+### Step 5: Save and Build the model
 
-7) Save and Build the model under _Build_ menu. It should build successfully. 
-[screenshot]
+1) Click _Save_ at the top right of the page to save changes made in _index.js_. 
 
+![image](https://user-images.githubusercontent.com/9892791/116344330-0d0f7200-a7b4-11eb-9bb9-de1709762c61.png)
+
+
+2) Click _Deploy_ to build the model. 
+
+![image](https://user-images.githubusercontent.com/9892791/116344732-c79f7480-a7b4-11eb-87b7-545fc36f847f.png)
+
+ 
 Let's understand what we have done so far.
 
-### Step 5: Test your Meal Planning Skill. 
+### Step 6: Test your Meal Planning Skill. 
 
 1) Click on the _Test_ menu and test the skill.  
 
