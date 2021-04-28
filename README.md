@@ -166,9 +166,9 @@ However, while your skill can ask for a user's meal plan option, your skill does
 
 ### How do I put this skill on my echo dot?
 /**
-*Get an Echo Dot or another Amazon device if you don’t have one already!
-*Download the Amazon Alexa app on your phone 
-*Log in w/ credentials for your developer account
-*Invoke your skill!!
+* Get an Echo Dot or another Amazon device if you don’t have one already!
+* Download the Amazon Alexa app on your phone 
+* Log in w/ credentials for your developer account
+* Invoke your skill!!
 */
 
