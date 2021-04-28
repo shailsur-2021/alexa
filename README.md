@@ -133,11 +133,11 @@ Let's understand what we have done so far.
 ### Step 6: Test your Meal Planning Skill. 
 It is time to test! The Meal Planner skill should now be able to do the following:
 
-/**
+
 * **Ask** the user for their birthday
 * **Listen** to the answer from the user and automatically follow up with questions if any required slots (month, day, year) are missing
 * **Respond** to the user by repeating their birthday
-*/
+
 
 Let's test the skill.
 1) Click  _Test_ tab to begin testing your skill.  
@@ -165,10 +165,10 @@ At this point, your skill has become slightly more nuanced. It can ask the user 
 However, while your skill can ask for a user's meal plan option, your skill doesn't remember it the next time the skill is opened. It would be a better user experience if Meal Planner remembered the selected plan. You can make your skill remember things by persisting data with AWS database or storage servoces in the backend. Persistence is not covered in this lab
 
 ### How do I put this skill on my echo dot?
-/**
+
 * Get an Echo Dot or another Amazon device if you don’t have one already!
 * Download the Amazon Alexa app on your phone 
 * Log in w/ credentials for your developer account
 * Invoke your skill!!
-*/
+
 
