@@ -162,9 +162,9 @@ Let's test the skill.
 
 At this point, your skill has become slightly more nuanced. It can ask the user for a meal plan options and respond with some  options. Congratulations!
 
-However, while your skill can ask for a user's meal plan option, your skill doesn't remember it the next time the skill is opened. It would be a better user experience if Meal Planner remembered the selected plan. You can make your skill remember things by persisting data with AWS database or storage servoces in the backend. Persistence is not covered in this workshop but you can take that up as a challenge. 
+However, while your skill can ask for a user's meal plan option, your skill doesn't remember it the next time the skill is opened. It would be a better user experience if Meal Planner remembered the selected plan. You can make your skill remember things by persisting responses with AWS database or storage services in the backend. We don't cover persistence is in this workshop but you are welcome to try it on your own following an existing Alexa tutorial. 
 
-### How do I put this skill on my echo dot?
+### How do I deploy this new skill in my Echo Dot?
 
 * Get an Echo Dot or another Amazon device if you don’t have one already!
 * Download the Amazon Alexa app on your phone 
