@@ -136,13 +136,7 @@ async function getData(diet,maxcalories) {
 Let's understand what we have done so far.
 
 ### Step 6: Test your Meal Planning Skill. 
-It is time to test! The Meal Planner skill should now be able to do the following:
-
-
-* **Ask** the user for their birthday
-* **Listen** to the answer from the user and automatically follow up with questions if any required slots (month, day, year) are missing
-* **Respond** to the user by repeating their birthday
-
+It is time to test! 
 
 Let's test the skill.
 1) Click  _Test_ tab to begin testing your skill.  
