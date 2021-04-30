@@ -138,7 +138,6 @@ Let's understand what we have done so far.
 ### Step 6: Test your Meal Planning Skill. 
 It is time to test! 
 
-Let's test the skill.
 1) Click  _Test_ tab to begin testing your skill.  
 
 ![image](https://user-images.githubusercontent.com/9892791/116345234-bd31aa80-a7b5-11eb-90be-d1d8ed738eaf.png)
