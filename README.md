@@ -72,10 +72,12 @@ In this section, we will make adjustments to the backend processing....
 ![image](https://user-images.githubusercontent.com/9892791/116192106-62d41380-a6fb-11eb-9918-e8e9b882cfba.png)
 
 
-3) Copy and paste the following snippet under async handle(handlerInput). You are now writing code to get the inputs _maxcalories_ and _diet_ type from the user and then calling the getData(diet,maxcalories) function to call the Generate Meal Plan Spoonacular API. 
+3) Copy and paste the snippets marked under the lines //copy from here and //copy until here under async handle(handlerInput) and async function getData(diet,maxcalories). Note : You would basically find these two functions empty with just the {} braces in the code you imported from github, under which you would place these snippets. 
+You are now writing code to get the inputs _maxcalories_ and _diet_ type from the user and then calling the getData(diet,maxcalories) function to call the Generate Meal Plan Spoonacular API. 
 
 ```
  async handle(handlerInput) {
+//copy from here
     const maxcalories =
       handlerInput.requestEnvelope.request.intent.slots.maxcalories.value;
     const diet   =
@@ -90,12 +92,14 @@ In this section, we will make adjustments to the backend processing....
         speakOutput = `I could not generate a meal plan for your choices. Please try again.`;
       });
     return handlerInput.responseBuilder.speak(speakOutput).getResponse();
+//copy until here
   }
 ```
 
 ```
 
 async function getData(diet,maxcalories) {
+//copy from here
   var options = {
     uri: `https://api.spoonacular.com/mealplanner/generate?timeFrame=day&diet=${diet}&maxcalories=${maxcalories}&apiKey=PUTYOURAPIKEYHERE`,
     json: true,
@@ -103,6 +107,7 @@ async function getData(diet,maxcalories) {
 
   var response = await rp(options);
   return response;
+//copy until here
 }
 
 ```
